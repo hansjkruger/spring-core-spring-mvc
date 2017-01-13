@@ -18,16 +18,19 @@ public class ProductServiceImpl implements ProductService {
     private Map<Integer,Product> products;
 
     public ProductServiceImpl() {
+
         loadProducts();
     }
 
     @Override
     public List<Product> listAllProducts() {
+
         return new ArrayList<>(products.values());
     }
 
     @Override
     public Product getProductById(Integer id) {
+
         return products.get(id);
     }
 
